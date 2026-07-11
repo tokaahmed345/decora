@@ -205,7 +205,7 @@ flutter run
 ## 📱 Screenshots
 
 <p align="center">
- <img src="screenshots/dev_tools.jpeg" width="200"/>
+ <img src="screenshots/dev_tools.jpeg" width="200" hight="700"/>
 
   <img src="screenshots/splash.jpeg" width="200"/>
   <img src="screenshots/onboarding 1.jpeg" width="200"/>

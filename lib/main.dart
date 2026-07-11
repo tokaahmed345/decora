@@ -10,7 +10,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  
+    await dotenv.load(fileName: ".env");  
+
   await Supabase.initialize(
     url: dotenv.env['SUPABASE_URL']!,
     anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
@@ -21,7 +22,6 @@ void main() async {
 
   await getIt<NotificationRemoteData>().updateFcmToken();
   getIt<NotificationRemoteData>().listenToFcmTokenRefresh();
-  await dotenv.load(fileName: ".env");
 
   runApp(const MyApp());
 }

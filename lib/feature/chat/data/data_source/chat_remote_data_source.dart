@@ -169,7 +169,7 @@ Future<void> sendMessage({
       body: lastMessagePreview,
     );
   } catch (e) {
-    // اطبع/سجّل الخطأ بس متخليش يفشل عملية إرسال الرسالة
+    
     print('Push notification failed: $e');
   }
 }

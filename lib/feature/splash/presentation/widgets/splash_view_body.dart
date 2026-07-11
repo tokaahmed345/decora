@@ -31,7 +31,6 @@ class _SplashViewbBodyState extends State<SplashViewbBody>
       duration: const Duration(milliseconds: 1200),
     );
 
-    // الخلفية تعمل fade-in سريع في أول 40% من مدة الأنيميشن
     _bgFadeAnimation = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(
         parent: _animationController,
@@ -39,7 +38,6 @@ class _SplashViewbBodyState extends State<SplashViewbBody>
       ),
     );
 
-    // اللوجو والنص يبدأوا بعد الخلفية بشوية
     final curvedAnimation = CurvedAnimation(
       parent: _animationController,
       curve: const Interval(0.25, 1.0, curve: Curves.easeOutBack),
@@ -88,7 +86,6 @@ class _SplashViewbBodyState extends State<SplashViewbBody>
           ),
         ),
 
-        // اللوجو + اسم التطبيق + التاجلاين - بتدخل بـ fade + scale + slide
         Positioned.fill(
           child: FadeTransition(
             opacity: _fadeAnimation,

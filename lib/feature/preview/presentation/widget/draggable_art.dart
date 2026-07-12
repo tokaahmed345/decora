@@ -82,9 +82,7 @@ class _DraggableArtState extends State<DraggableArt> {
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    // Wrapped the draggable art itself in RepaintBoundary
-                    // too, so it repaints in its own layer instead of
-                    // being merged with everything else on every frame.
+          
                     Center(
                       child: RepaintBoundary(
                         child: Transform.scale(
@@ -96,11 +94,7 @@ class _DraggableArtState extends State<DraggableArt> {
                               width: baseSize,
                               height: baseSize,
                               fit: BoxFit.fill,
-                              // Decoding at the actual display size (x2 for
-                              // pixelRatio/retina screens) instead of the
-                              // image's native/full resolution avoids
-                              // decoding and repainting a huge bitmap on
-                              // every scale/drag update.
+                    
                               cacheWidth: (baseSize * 2).toInt(),
                               cacheHeight: (baseSize * 2).toInt(),
                             ),

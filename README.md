@@ -203,6 +203,14 @@ flutter run
 ---
 
 ## 📱 Screenshots
+
+
+
+
+https://github.com/user-attachments/assets/351f60f8-5d66-4ff0-b035-45bfc2027d4d
+
+
+
 <p align="center">
     <img src="screenshots/dev_tools.jpeg" width="100%" />
 </p>

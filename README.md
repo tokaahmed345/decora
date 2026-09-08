@@ -1,4 +1,4 @@
-# 🛋️ Decora
+# 🛋️  Decora
 **Home Decor & AI Room Analyzer Mobile Application — Built with Flutter**
 A social, AI-powered home decor app that lets users preview wall/room designs, get AI-driven decor suggestions, and share ideas with friends.
 
